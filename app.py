@@ -17,7 +17,7 @@ CAPITAL = 25000
 RISK_PER_TRADE = 500
 
 # ---------------- TELEGRAM FUNCTION ----------------
-def send_telegram(message):
+def send_telegram(message):send_telegram("Test message: bot working")
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
     data = {"chat_id": CHAT_ID, "text": message}
     try:
